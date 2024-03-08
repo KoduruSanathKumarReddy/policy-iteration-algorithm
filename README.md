@@ -23,7 +23,11 @@ Here the algorithm alternates between policy evaluation and policy improvement s
 Final print the new optimal policy and state value function.
 
 ## POLICY IMPROVEMENT FUNCTION
+
 ~~~
+Developed by: Koduru Sanath Kumar Reddy
+Registered no: 212221240024
+
 def policy_improvement(V, P, gamma=1.0):
     Q = np.zeros((len(P), len(P[0])), dtype=np.float64)
     for S in range(len(P)):
@@ -36,7 +40,12 @@ def policy_improvement(V, P, gamma=1.0):
 ~~~
 
 ## POLICY ITERATION FUNCTION
+
 ~~~
+Developed by: Koduru Sanath Kumar Reddy
+Registered no: 212221240024
+
+
 def policy_iteration(P, gamma=1.0, theta=1e-10):
     random_actions = np.random.choice(tuple(P[0].keys()), len(P))
     pi = lambda s: {s:a for s,a in enumerate(random_actions)}[s]
@@ -64,10 +73,12 @@ def policy_iteration(P, gamma=1.0, theta=1e-10):
 <img width="717" alt="image" src="https://github.com/KoduruSanathKumarReddy/policy-iteration-algorithm/assets/69503902/d522244a-9b87-40a6-87b9-39deabef271f">
 
 ## Optimal Policy and State value function:
-<img width="717" alt="image" src="https://github.com/KoduruSanathKumarReddy/policy-iteration-algorithm/assets/69503902/f35c1a41-95d3-4745-ac56-08a5d70a196e">
+<img width="685" alt="image" src="https://github.com/KoduruSanathKumarReddy/policy-iteration-algorithm/assets/69503902/5ac0c5e8-84d5-4a0c-8d47-da7a3061d266">
+
 
 ## State Value Function:
-<img width="717" alt="image" src="https://github.com/KoduruSanathKumarReddy/policy-iteration-algorithm/assets/69503902/c264cbd4-8892-4923-9f70-26d2ac035411">
+<img width="654" alt="image" src="https://github.com/KoduruSanathKumarReddy/policy-iteration-algorithm/assets/69503902/5473c1c0-ea2b-4957-bccd-fd0ca141c11e">
+
 
 
 
