@@ -4,7 +4,8 @@
 To develop a Python porgram to find the optiml policy for the given MDP using the policy iteration algorithm 
 
 ## PROBLEM STATEMENT
-Explain the problem statement.
+The situation is to create a python program where a policy is generated with random actions and for that policy we have to perform policy evaluation and policy improvement to find the optimal new policy and state value function and check for the difference between the new policy and the old policy. The combine operation of the 
+policy evaluation and policy improvement is reffered to as policy iteration.
 
 ## POLICY ITERATION ALGORITHM
 ### Step 1: Initialize :
